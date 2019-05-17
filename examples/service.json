@@ -1,0 +1,124 @@
+{
+  "provider_id": "PSNC",
+  "type": "compute",
+  "sitename": "Eagle",
+  "hostname": "eagle.man.poznan.pl",
+  "service_type": "eu.deep.slurm",
+  "location": "Poznan Supercomputing and Networking Center",
+  "contact": "support-hpc@man.poznan.pl",
+  "operating_system": "Scientific Linux CERN 6.7 (Carbon)",
+  "queue_system": "SLURM",
+  "partitions": [
+    {
+      "partition_name": "standard*",
+      "default_time_for_job": "1-00:00:00",
+      "maximum_time_for_job": "7-00:00:00",
+      "nodes": "e[0003-1087]"
+    },
+    {
+      "partition_name": "fast",
+      "default_time_for_job": "15:00",
+      "maximum_time_for_job": "1:00:00",
+      "nodes": "e[0003-1087]"
+    },
+    {
+      "partition_name": "bigmem",
+      "default_time_for_job": "1-00:00:00",
+      "maximum_time_for_job": "7-00:00:00",
+      "nodes": "e[0073-0122,0129-0130,0786-0813]"
+    },
+    {
+      "partition_name": "broadwell",
+      "default_time_for_job": "2-12:00:00",
+      "maximum_time_for_job": "2-12:00:00",
+      "nodes": "e[1033-1087]"
+    },
+    {
+      "partition_name": "tesla",
+      "default_time_for_job": "1-00:00:00",
+      "maximum_time_for_job": "7-00:00:00",
+      "nodes": "gpu[01-03]"
+    },
+    {
+      "partition_name": "biology_fast",
+      "default_time_for_job": "1:00:00",
+      "maximum_time_for_job": "1:00:00",
+      "nodes": "e[0003-1087]"
+    },
+    {
+      "partition_name": "biology_standard",
+      "default_time_for_job": "4:00:00",
+      "maximum_time_for_job": "7-00:00:00",
+      "nodes": "e[0003-1087]"
+    },
+    {
+      "partition_name": "biology_night",
+      "default_time_for_job": "12:00:00",
+      "maximum_time_for_job": "12:00:00",
+      "nodes": "e[0003-1087]"
+    },
+    {
+      "partition_name": "biology_weekend",
+      "default_time_for_job": "2-12:00:00",
+      "maximum_time_for_job": "2-12:00:00",
+      "nodes": "e[0003-1087]"
+    }
+  ],
+  "nodes_info": [
+    {
+      "nodes": "e[0003-0072,0123-0128,0131-0132,0265-0456,0649-0785,0814-0823]",
+      "number_of_nodes": "417",
+      "allocated_nodes": "413",
+      "idle_nodes": "1",
+      "cpus_per_node": "28",
+      "memory_per_node_MB": "128541",
+      "sockets_per_node": "2",
+      "cores_per_socket": "14",
+      "threads_per_core": "1"
+    },
+    {
+      "nodes": "e[0073-0122,0129-0130,0786-0813]",
+      "number_of_nodes": "80",
+      "allocated_nodes": "79",
+      "idle_nodes": "0",
+      "cpus_per_node": "28",
+      "memory_per_node_MB": "257565",
+      "sockets_per_node": "2",
+      "cores_per_socket": "14",
+      "threads_per_core": "1"
+    },
+    {
+      "nodes": "e[0133-0264,0457-0648,0824-1032]",
+      "number_of_nodes": "533",
+      "allocated_nodes": "524",
+      "idle_nodes": "9",
+      "cpus_per_node": "28",
+      "memory_per_node_MB": "64029",
+      "sockets_per_node": "2",
+      "cores_per_socket": "14",
+      "threads_per_core": "1"
+    },
+    {
+      "nodes": "e[1033-1087]",
+      "number_of_nodes": "55",
+      "allocated_nodes": "55",
+      "idle_nodes": "0",
+      "cpus_per_node": "32",
+      "memory_per_node_MB": "128540",
+      "sockets_per_node": "2",
+      "cores_per_socket": "16",
+      "threads_per_core": "1"
+    },
+    {
+      "nodes": "gpu[01-03]",
+      "number_of_nodes": "3",
+      "allocated_nodes": "2",
+      "idle_nodes": "1",
+      "cpus_per_node": "20",
+      "memory_per_node_MB": "95141",
+      "sockets_per_node": "2",
+      "cores_per_socket": "10",
+      "threads_per_core": "1"
+    }
+  ]
+}
