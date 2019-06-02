@@ -1,0 +1,22 @@
+[
+  {
+    "image_id": "first_image",
+    "image_name": "First Image",
+    "image_description": "This is the first image",
+    "image_marketplace_id": "http://my.marketplace.domain.tld/first_image",
+    "architecture": "x86_64",
+    "image_os": "linux",
+    "distribution": "ubuntu",
+    "version": "14.04"
+  },
+  {
+    "image_id": "second_image",
+    "image_name": "Second Image",
+    "image_version": "2",
+    "image_description": "This is the Second image",
+    "architecture": "x86_64",
+    "image_os": "linux",
+    "distribution": "CentOS",
+    "version": "7.0"
+  }
+]
